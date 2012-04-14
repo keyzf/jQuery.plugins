@@ -1,6 +1,8 @@
 /*
-* 水印文字 (使用绝对定位内嵌层)
-* 实际上，当前只有IE6~9的input元素不支持原生 placeholder 属性
+* html5 placeholder pollfill
+* - 使用绝对定位内嵌层
+* - 也适用于密码域
+* 目标浏览器: IE 6~9, FF 3.5
 */
 
 (function ($) {
@@ -54,6 +56,7 @@
           left      : 0,
           color     : 'gray',
           cursor    : 'text',
+          textAlign : 'left',
           position  : 'absolute',
           fontSize  : $input.css('fontSize'),
           fontFamily: $input.css('fontFamily'),
